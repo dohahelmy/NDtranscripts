@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Google Developer ND'18</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:700|Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <div id="logo">
+                <img src="https://1onjea25cyhx3uvxgs4vu325-wpengine.netdna-ssl.com/wp-content/themes/udacity_wp_1_8/images/Udacity_Logo_SVG_200x35.svg" alt="Udacity_Logo_SVG_200x35">
+            </div>
+            <div class="pageName">
+                <h2>Google Developer '18</h2>
+                <h3>Nanodegree AMA Transcripts</h3>
+            </div>
+        </div>
+        <div id="introTitle">
+            <h1>AMA Sessions Transcripts</h1>
+            <date>15<sup>th</sup> February 2018 : 15<sup>th</sup> August 2018</date>
+            <p>This webpage includes all the transcripts of AMA sessions held on Nanodegree scholarship Slack channel.</p>
+        </div>
+    </header>
+    <main>
+        <div class="content">
+            <!--SEARCH BAR and Download button-->
+            <div class="buttons" dir="rtl">
+                <input type="search" placeholder="Search">
+                <input type="button" name="Download" value="Download pdf version">
+            </div>
+            <div class="clearfix"></div>
+            <!--Q&As-->
+            <div class="Question-list">
+                <div class="question">
+                    <div class="catergory">
+                        <div class="GENERAL"></div>
+                        <span><a href="#">General</a></span>
+                        <div class="ABND"></div>
+                        <span><a href="#">Android Basics track</a></span>
+                    </div>
+                    <h3>Do we all have a chat in the classroom? Students from other programs said they have, but I don't. Mine is Android Basics</h3>
+                    <p>As of right now, the chat function built into the classrooms have been rolled out to FEND and MWS. This may be rolled into more NDs in the future, but at this time there's nothing to confirm or even speculate on since it's fairly new and still being tested in specific NDs.</p>
+                </div>
+                <div class="question">
+                    <div class="catergory">
+                        <div class="GENERAL"></div>
+                        <span><a href="#">General</a></span>
+                        <div class="FEND"></div>
+                        <span><a href="#">Front-end track</a></span>
+                    </div>
+                    <h3>Historically what is reasons made some students not not graduate from the ND is it the same criteria in the first phase or what?
+                    and what advises for us to get 100% competently understanding and stronger front end developers</h3>
+                    <p>Really, it mostly comes down to time management. The first projects are the most important because we have a lot of statistics that show the students who are able to get the first two projects in on time are very likely to successfully finish the ND.</p>
+                </div>
+            </div>
+        </div>
+        <!--Side Column-->
+        <div class="sideColumn" dir="rtl">
+            <div class="filters">
+                <h2 class="Side-title">Filter Archive</h2>
+                <div class="filter-item">
+                    <ul>
+                        <li><input type="checkbox" checked>All</li>
+                        <div class="clearfix"></div>
+                    </ul>
+                </div>
+                <div class="filter-item">
+                    <h3>filter by catergory</h3>
+                    <ul>
+                        <li>
+                            <input type="checkbox"><div class="GENERAL"></div>General
+                        </li>
+                        <div class="clearfix"></div>
+                        <li>
+                            <input type="checkbox"><div class="TECHNICAL"></div>Technical
+                        </li>
+                        <div class="clearfix"></div>
+                    </ul>
+                </div>
+                <div class="filter-item">
+                    <h3>filter by track</h3>
+                    <ul>
+                        <li>
+                            <input type="checkbox"><div class="ABND"></div>ABND
+                        </li>
+                        <div class="clearfix"></div>
+                        <li>
+                            <input type="checkbox"><div class="AND"></div>AND
+                        </li>
+                        <div class="clearfix"></div>
+                        <li>
+                            <input type="checkbox"><div class="FEND"></div>FEND
+                        </li>
+                        <div class="clearfix"></div>
+                        <li>
+                            <input type="checkbox"><div class="MWS"></div>MWS
+                        </li>
+                        <div class="clearfix"></div>
+                    </ul>
+                </div>
+                <div class="filter-item">
+                    <h3>filter by time</h3>
+                    <ul>
+                        <li>
+                            <input type="checkbox">Feb 15 – 11AM-12PM CET
+                        </li>
+                        <div class="clearfix"></div>
+                        <li>
+                            <input type="checkbox">Feb 15 – 4PM-5PM CET
+                        </li>
+                        <div class="clearfix"></div>
+                    </ul>
+                </div>
+            </div>
+        </br>
+        </br>
+        </br>
+            <div class="upcoming">
+                <h2 class="Side-title">Upcoming Sessions</h2>
+                <ul>
+                    <li class="date" id="nextAMA">
+                        <h3>Friday, Feb 16</h3>
+                        <h4>11AM-12PM CET</h4>
+                    </li>
+                    <li class="date">
+                        <h3>Friday, Feb 16</h3>
+                        <h4>4PM-5PM CET</h4>
+                    </li>
+                    <li class="date">
+                        <h3>Monday, Feb 19</h3>
+                        <h4>11AM-12PM CET</h4>
+                    </li>
+                    <li class="date">
+                        <h3>Monday, Feb 19</h3>
+                        <h4>4PM-5PM CET</h4>
+                    </li>
+                    <li class="date">
+                        <h3>Tuesday, Feb 20</h3>
+                        <h4>4PM-5PM CET</h4>
+                    </li>
+                    <li class="date">
+                        <h3>Wednesday, Feb 21</h3>
+                        <h4>4PM-5PM CET</h4>
+                    </li>
+                    <li class="date">
+                        <h3>Thursday, Feb 22</h3>
+                        <h4>4PM-5PM CET</h4>
+                    </li>
+                    <li class="date">
+                        <h3>Friday, Feb 23</h3>
+                        <h4>4PM-5PM CET</h4>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Designed with <strong>❤</strong> for the community of <strong>Udacity and Google</strong></p>
+    </footer>
+</body>
+</html>
