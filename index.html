@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Google Developer ND'18</title>
     <link href="https://fonts.googleapis.com/css?family=Oswald:700|Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -30,27 +33,38 @@
             <!--SEARCH BAR and Download button-->
             <div class="buttons" dir="rtl">
                 <input type="search" placeholder="Search">
-                <input type="button" name="Download" value="Download pdf version">
+                <button type="button" name="Download" value="Download pdf">
+                    <span>PDF version</span>
+                    <i class="material-icons">file_download</i>
+                </button>
             </div>
             <div class="clearfix"></div>
             <!--Q&As-->
             <div class="Question-list">
                 <div class="question">
                     <div class="catergory">
-                        <div class="GENERAL"></div>
-                        <span><a href="#">General</a></span>
-                        <div class="ABND"></div>
-                        <span><a href="#">Android Basics track</a></span>
+                        <div class="catergory-item">
+                            <div class="GENERAL circle-margin-right"></div>
+                            <span><a href="#">General</a></span>
+                        </div>
+                        <div class="catergory-item">
+                            <div class="ABND circle-margin-right"></div>
+                            <span><a href="#">Android Basics track</a></span>
+                        </div>
                     </div>
                     <h3>Do we all have a chat in the classroom? Students from other programs said they have, but I don't. Mine is Android Basics</h3>
                     <p>As of right now, the chat function built into the classrooms have been rolled out to FEND and MWS. This may be rolled into more NDs in the future, but at this time there's nothing to confirm or even speculate on since it's fairly new and still being tested in specific NDs.</p>
                 </div>
                 <div class="question">
                     <div class="catergory">
-                        <div class="GENERAL"></div>
-                        <span><a href="#">General</a></span>
-                        <div class="FEND"></div>
-                        <span><a href="#">Front-end track</a></span>
+                        <div class="catergory-item">
+                            <div class="GENERAL circle-margin-right"></div>
+                            <span><a href="#">General</a></span>
+                        </div>
+                        <div class="catergory-item">
+                            <div class="FEND circle-margin-right"></div>
+                            <span><a href="#">Front-End track</a></span>
+                        </div>
                     </div>
                     <h3>Historically what is reasons made some students not not graduate from the ND is it the same criteria in the first phase or what?
                     and what advises for us to get 100% competently understanding and stronger front end developers</h3>
@@ -64,7 +78,13 @@
                 <h2 class="Side-title">Filter Archive</h2>
                 <div class="filter-item">
                     <ul>
-                        <li><input type="checkbox" checked>All</li>
+                        <li class="checkbox-container">
+                            <input type="checkbox" checked>
+                            <span class="checkmark"></span>
+                            <div class="filter-name">
+                                <p>All</p>
+                            </div>
+                        </li>
                         <div class="clearfix"></div>
                     </ul>
                 </div>
@@ -72,11 +92,19 @@
                     <h3>filter by catergory</h3>
                     <ul>
                         <li>
-                            <input type="checkbox"><div class="GENERAL"></div>General
+                            <input type="checkbox">
+                            <div class="filter-name">
+                                <div class="GENERAL circle-margin-left"></div>
+                                <p>General</p>
+                            </div>
                         </li>
                         <div class="clearfix"></div>
                         <li>
-                            <input type="checkbox"><div class="TECHNICAL"></div>Technical
+                            <input type="checkbox">
+                            <div class="filter-name">
+                                <div class="TECHNICAL circle-margin-left"></div>
+                                <p>Technical</p>
+                            </div>
                         </li>
                         <div class="clearfix"></div>
                     </ul>
@@ -85,19 +113,37 @@
                     <h3>filter by track</h3>
                     <ul>
                         <li>
-                            <input type="checkbox"><div class="ABND"></div>ABND
+                            <input type="checkbox">
+                            <div class="filter-name">
+                                <div class="ABND circle-margin-left"></div>
+                                <p>ABND</p>
+                            </div>
+
                         </li>
                         <div class="clearfix"></div>
                         <li>
-                            <input type="checkbox"><div class="AND"></div>AND
+                            <input type="checkbox">
+                            <div class="filter-name">
+                                <div class="AND circle-margin-left"></div>
+                                <p>AND</p>
+                            </div>
                         </li>
                         <div class="clearfix"></div>
                         <li>
-                            <input type="checkbox"><div class="FEND"></div>FEND
+                            <input type="checkbox">
+                            <div class="filter-name">
+                                <div class="FEND circle-margin-left"></div>
+                                <p>FEND</p>
+                            </div>
+
                         </li>
                         <div class="clearfix"></div>
                         <li>
-                            <input type="checkbox"><div class="MWS"></div>MWS
+                            <input type="checkbox">
+                            <div class="filter-name">
+                                <div class="MWS circle-margin-left"></div>
+                                <p>MWS</p>
+                            </div>
                         </li>
                         <div class="clearfix"></div>
                     </ul>
@@ -106,11 +152,17 @@
                     <h3>filter by time</h3>
                     <ul>
                         <li>
-                            <input type="checkbox">Feb 15 – 11AM-12PM CET
+                            <input type="checkbox">
+                            <div class="filter-name">
+                                <p>Feb 15 – 11AM-12PM CET</p>
+                            </div>
                         </li>
                         <div class="clearfix"></div>
                         <li>
-                            <input type="checkbox">Feb 15 – 4PM-5PM CET
+                            <input type="checkbox">
+                            <div class="filter-name">
+                                <p>Feb 15 – 4PM-5PM CET</p>
+                            </div>
                         </li>
                         <div class="clearfix"></div>
                     </ul>
