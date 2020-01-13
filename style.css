@@ -49,7 +49,7 @@ a {
 }
 
 .pageName{
-    padding-top: 20px;
+    /* padding-top: 20px; */
     text-align: center;
 }
 
@@ -59,7 +59,13 @@ a {
     padding-left: 20px;
 } */
 
+.pageName h1{
+    font-size: 25px;
+    padding: 20px 0px;
+}
+
 .pageName h3 {
+    font-size: 17px;
     font-family: 'Quicksand', sans-serif;
     font-weight: 100;
 }
@@ -72,7 +78,7 @@ a {
     background: linear-gradient(160deg, #02ccba, #aa7ecd);
     color: #fff;
     width: 100%;
-    padding: 40px 10px;
+    padding: 20px;
     text-align: center;
 }
 
@@ -93,7 +99,7 @@ header #introTitle{
 
 #introTitle h2 {
     font-size: 1.75rem;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     color: rgba(255, 255, 255, 0.9);
 }
 
